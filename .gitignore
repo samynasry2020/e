@@ -51,3 +51,5 @@ ios/Pods/
 android/build/
 android/gradle/
 ios/Runner.xcworkspace/
+git add .
+git commit -m "Initial commit"
