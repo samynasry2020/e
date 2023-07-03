@@ -1,0 +1,24 @@
+name: my_flutter_app
+description: My Flutter App
+version: 1.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Add your other dependencies here
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  # Define your app settings here
+  assets:
+    - assets/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700

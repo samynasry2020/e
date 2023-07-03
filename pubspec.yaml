@@ -1,0 +1,23 @@
+name: companies_house_pro1
+description: companies_house_pro1
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.4
+
+  # Add your other dependencies here
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# Define your app title and theme here
+title: companies_house_pro1
+theme:
+  primarySwatch: Colors.blue
+
