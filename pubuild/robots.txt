@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://pubuild.com/sitemap.xml
+

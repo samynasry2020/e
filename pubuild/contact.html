@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | PUBUILD TECHNOLOGIES INC.</title>
+    <meta name="description" content="Contact PUBUILD's government-only contracts and engineering teams." />
+    <meta property="og:title" content="Contact | PUBUILD TECHNOLOGIES INC." />
+    <meta property="og:description" content="Government agencies only. Use a .gov or .mil email address." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pubuild.com/contact.html" />
+    <meta property="og:image" content="/assets/images/og.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="logo" aria-label="PUBUILD TECHNOLOGIES INC. home">
+          <span class="logo-mark" aria-hidden="true">PU</span>
+          <span class="logo-text">PUBUILD TECHNOLOGIES INC.</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contracts.html">Contracts & Bids</a></li>
+            <li><a href="/compliance.html">Compliance</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a aria-current="page" class="btn btn-small" href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container" style="padding:48px 0 56px">
+      <h1>Contact</h1>
+      <p class="lead">Government agencies and contracting officers only. Use a .gov or .mil email address.</p>
+
+      <form class="card" style="max-width:720px; margin-top:24px" onsubmit="return validateGovEmail(event)">
+        <div style="display:grid; gap:12px">
+          <label>
+            <span>Agency</span>
+            <input name="agency" type="text" required placeholder="U.S. Department / Agency" />
+          </label>
+          <label>
+            <span>Full Name</span>
+            <input name="name" type="text" required placeholder="First Last" />
+          </label>
+          <label>
+            <span>Government Email</span>
+            <input name="email" type="email" required placeholder="name@agency.gov" data-gov-only />
+            <small id="gov-only-msg" style="color: var(--danger)"></small>
+          </label>
+          <label>
+            <span>Subject</span>
+            <input name="subject" type="text" required placeholder="RFI/RFQ/RFP Reference or Topic" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required placeholder="Share context, solicitation number, timelines, and contact preferences."></textarea>
+          </label>
+          <div>
+            <button type="submit" class="btn">Send</button>
+            <span style="margin-left:8px; color: var(--muted)">We respond within one business day.</span>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="branding">
+          <span class="logo-mark" aria-hidden="true">PU</span>
+          <span>PUBUILD TECHNOLOGIES INC.</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/compliance.html">Compliance</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+        <div class="legal">
+          <small>© <span id="year"></span> PUBUILD TECHNOLOGIES INC.</small>
+        </div>
+      </div>
+      <script>
+        function validateGovEmail(e) {
+          const form = e.target;
+          const email = form.email.value.trim().toLowerCase();
+          const isGov = /\.(gov|mil)$/.test(email.split('@')[1] || '');
+          if (!isGov) {
+            alert('Government email (.gov or .mil) required.');
+            e.preventDefault();
+            return false;
+          }
+          alert('Thank you. Your message has been captured locally. Configure backend/email in production.');
+          e.preventDefault();
+          form.reset();
+          return false;
+        }
+      </script>
+      <script src="/assets/js/main.js" defer></script>
+    </footer>
+  </body>
+  </html>
+
