@@ -1,0 +1,27 @@
+# Apache configuration for GovTribe Platform root directory
+# Redirect all requests to public directory
+
+RewriteEngine On
+
+# Redirect to public directory if not already there
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "\.(env|log|sql|md)$">
+    Require all denied
+</FilesMatch>
+
+# Deny access to directories
+<DirectoryMatch "(storage|config|src|jobs|tests|vendor)">
+    Require all denied
+</DirectoryMatch>
