@@ -1,0 +1,65 @@
+{
+  "id": "storage",
+  "name": "Storage Solutions",
+  "slug": "storage",
+  "description": "Enterprise storage systems including NAS, SAN, and direct-attached storage. Built for data integrity, performance, and scalability.",
+  "icon": "💾",
+  "products": [
+    {
+      "id": "storage-nas",
+      "name": "Network Attached Storage (NAS)",
+      "category": "storage",
+      "description": "Scalable NAS solutions for file sharing, backup, and media storage. Enterprise-grade reliability with SMB/NFS support.",
+      "specs": [
+        "12-bay to 60-bay configurations",
+        "Dual-controller active-active architecture",
+        "10GbE/25GbE connectivity",
+        "SSD caching and tiering",
+        "Snapshot and replication support"
+      ],
+      "compatibility": [
+        "SMB/CIFS, NFS, AFP protocols",
+        "iSCSI block storage",
+        "S3-compatible object storage",
+        "Integration with Active Directory, LDAP"
+      ],
+      "features": [
+        "Hot-swappable drives",
+        "RAID 0, 1, 5, 6, 10, 50, 60",
+        "Web-based management",
+        "Encryption at rest and in transit"
+      ],
+      "applications": [
+        "Centralized file storage",
+        "Video surveillance recording",
+        "Backup and disaster recovery",
+        "Virtualization storage"
+      ]
+    },
+    {
+      "id": "storage-nvme",
+      "name": "All-Flash NVMe Storage",
+      "category": "storage",
+      "description": "Ultra-low latency all-NVMe storage arrays for performance-critical applications. Ideal for databases and analytics.",
+      "specs": [
+        "24x U.2 NVMe drive bays",
+        "Dual NVMe-oF controllers",
+        "100GbE RDMA connectivity",
+        "In-line deduplication and compression",
+        "Up to 2PB effective capacity"
+      ],
+      "features": [
+        "Sub-millisecond latency",
+        "Active-active high availability",
+        "Non-disruptive upgrades",
+        "REST API automation"
+      ],
+      "applications": [
+        "High-frequency trading",
+        "Real-time analytics",
+        "Oracle and SQL databases",
+        "VDI environments"
+      ]
+    }
+  ]
+}

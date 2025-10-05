@@ -1,0 +1,34 @@
+{
+  "id": "monitors",
+  "name": "Monitors & Displays",
+  "slug": "monitors",
+  "description": "Professional displays for workstations, control rooms, and digital signage. Color-accurate and ergonomic designs.",
+  "icon": "🖥️",
+  "products": [
+    {
+      "id": "monitor-4k-pro",
+      "name": "27\" 4K Professional Monitor",
+      "category": "monitors",
+      "description": "Color-calibrated 4K display for professional content creation and design work. Factory calibrated with deltaE < 2.",
+      "specs": [
+        "27\" IPS panel, 3840x2160 resolution",
+        "100% sRGB, 99% Adobe RGB coverage",
+        "Hardware calibration support",
+        "DisplayPort 1.4, HDMI 2.0, USB-C",
+        "Height, tilt, swivel, pivot adjustable stand"
+      ],
+      "features": [
+        "Built-in colorimeter",
+        "KVM switch functionality",
+        "Picture-in-picture/by-picture",
+        "Low blue light modes"
+      ],
+      "applications": [
+        "Photo and video editing",
+        "Graphic design",
+        "CAD workstations",
+        "Medical imaging"
+      ]
+    }
+  ]
+}

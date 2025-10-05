@@ -1,0 +1,64 @@
+{
+  "id": "workstations",
+  "name": "Workstations",
+  "slug": "workstations",
+  "description": "Professional workstations for CAD, engineering, content creation, and scientific computing. ISV-certified and built for demanding workflows.",
+  "icon": "💻",
+  "products": [
+    {
+      "id": "workstation-tower",
+      "name": "Professional Tower Workstation",
+      "category": "workstations",
+      "description": "Full-tower workstation with ISV certifications for professional applications. Designed for engineers, architects, and content creators.",
+      "specs": [
+        "Intel Xeon W or AMD Threadripper PRO processors",
+        "Up to 512GB ECC RAM",
+        "Dual professional GPUs (NVIDIA RTX A-series or AMD Radeon PRO)",
+        "Multiple NVMe M.2 slots for fast storage",
+        "Thunderbolt 4 connectivity"
+      ],
+      "compatibility": [
+        "Certified for Autodesk, Adobe, SolidWorks, ANSYS",
+        "Windows 11 Pro for Workstations",
+        "Linux distributions (Ubuntu, RHEL)"
+      ],
+      "features": [
+        "Tool-less upgradability",
+        "Advanced acoustic dampening",
+        "Front-access ports",
+        "VESA mount compatible"
+      ],
+      "applications": [
+        "3D CAD and BIM",
+        "Video editing and color grading",
+        "Scientific simulation",
+        "Engineering analysis"
+      ]
+    },
+    {
+      "id": "workstation-compact",
+      "name": "Compact Workstation",
+      "category": "workstations",
+      "description": "Small form factor workstation without compromising performance. Ideal for space-constrained environments.",
+      "specs": [
+        "Intel Core i9 or AMD Ryzen 9 processors",
+        "Up to 128GB DDR5 RAM",
+        "Single professional GPU support",
+        "Multiple display outputs (up to 8K)",
+        "Wi-Fi 6E and 10GbE networking"
+      ],
+      "features": [
+        "Compact 10L chassis",
+        "Quiet operation (<30dB)",
+        "Lockable chassis",
+        "Optional mounting brackets"
+      ],
+      "applications": [
+        "Financial analysis",
+        "Medical imaging",
+        "GIS and mapping",
+        "Software development"
+      ]
+    }
+  ]
+}
