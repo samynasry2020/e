@@ -1,0 +1,15 @@
+import { MetadataRoute } from 'next';
+import { COMPANY } from '@/lib/constants';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/_next/'],
+      },
+    ],
+    sitemap: `${COMPANY.url}/sitemap.xml`,
+  };
+}

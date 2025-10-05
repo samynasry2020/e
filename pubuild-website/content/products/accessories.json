@@ -1,0 +1,34 @@
+{
+  "id": "accessories",
+  "name": "Accessories",
+  "slug": "accessories",
+  "description": "Essential accessories including cables, power distribution, cooling, and peripherals for complete IT infrastructure.",
+  "icon": "🔌",
+  "products": [
+    {
+      "id": "pdu-rack",
+      "name": "Rack PDU with Monitoring",
+      "category": "accessories",
+      "description": "Intelligent power distribution unit with remote monitoring and outlet control. Essential for data center power management.",
+      "specs": [
+        "24 outlets (C13/C19 combination)",
+        "208V/240V, 30A capacity",
+        "Per-outlet power monitoring",
+        "Network management (SNMP, HTTP)",
+        "Environmental sensors (temp/humidity)"
+      ],
+      "features": [
+        "Individual outlet switching",
+        "Power consumption metering",
+        "Alarm notifications",
+        "Sequential power-on delay"
+      ],
+      "applications": [
+        "Server rack power distribution",
+        "Remote power management",
+        "Energy monitoring",
+        "Load balancing"
+      ]
+    }
+  ]
+}

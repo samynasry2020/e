@@ -1,0 +1,35 @@
+{
+  "id": "rackmount",
+  "name": "Rackmount Systems",
+  "slug": "rackmount",
+  "description": "Complete rackmount solutions including chassis, PDUs, KVM switches, and rack accessories for data center deployments.",
+  "icon": "🗄️",
+  "products": [
+    {
+      "id": "rack-42u",
+      "name": "42U Server Rack Cabinet",
+      "category": "rackmount",
+      "description": "Professional-grade 42U rack cabinet with cable management and cooling options. EIA-310 standard compliant.",
+      "specs": [
+        "42U (2000mm) height",
+        "800mm width x 1000mm depth",
+        "Adjustable square-hole mounting rails",
+        "1500kg static load capacity",
+        "Lockable front and rear doors"
+      ],
+      "features": [
+        "Perforated doors for airflow",
+        "Removable side panels",
+        "Integrated cable management",
+        "Leveling feet and casters",
+        "Grounding kit included"
+      ],
+      "applications": [
+        "Data center deployments",
+        "Server room installations",
+        "Network operations centers",
+        "Government facilities"
+      ]
+    }
+  ]
+}

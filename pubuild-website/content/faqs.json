@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Do you sell directly to government agencies?",
+    "answer": "Yes, we work with federal, state, and local government agencies. We can provide quotes for direct purchases, respond to RFPs, and work with government contracting vehicles. Contact us with your requirements and we'll advise on the best procurement path.",
+    "category": "Government"
+  },
+  {
+    "question": "What certifications does PU Build hold?",
+    "answer": "We are actively pursuing various small business certifications. Please contact us directly for our current certification status and documentation. We maintain transparency about our certifications and will never misrepresent our status.",
+    "category": "Government"
+  },
+  {
+    "question": "Can you provide GSA Schedule pricing?",
+    "answer": "We are working toward GSA Schedule contracts. In the meantime, we can provide competitive pricing through direct procurement, state contracts, or cooperative purchasing agreements. Contact us for a quote.",
+    "category": "Government"
+  },
+  {
+    "question": "What is your typical lead time for orders?",
+    "answer": "Lead times vary by product and configuration complexity. Standard configurations typically ship in 2-4 weeks. Custom builds may take 4-8 weeks. For urgent requirements, we can expedite orders when possible. Contact us for specific timelines.",
+    "category": "Ordering"
+  },
+  {
+    "question": "Do you offer financing options?",
+    "answer": "Yes, we work with equipment financing partners to provide flexible payment options including leasing and installment plans. Government agencies can also use their standard procurement and payment methods.",
+    "category": "Ordering"
+  },
+  {
+    "question": "What warranty and support do you provide?",
+    "answer": "Products come with manufacturer warranties (typically 3-5 years for servers and workstations). We facilitate warranty claims and can provide extended warranty options. We also offer professional services for installation, configuration, and ongoing support.",
+    "category": "Support"
+  },
+  {
+    "question": "Can you help with system design and architecture?",
+    "answer": "Absolutely. Our team can assist with capacity planning, architecture design, and solution sizing. This service is complimentary for qualified projects. Contact us to discuss your requirements.",
+    "category": "Support"
+  },
+  {
+    "question": "Do you handle installation and deployment?",
+    "answer": "Yes, we offer professional services including on-site installation, rack integration, cable management, and commissioning. We can deploy single systems or complete data center builds.",
+    "category": "Support"
+  },
+  {
+    "question": "Are your products subject to export controls?",
+    "answer": "Some high-performance computing products may be subject to U.S. export controls (EAR/ITAR). The purchaser is responsible for compliance with all applicable export regulations. We can provide export classification information upon request.",
+    "category": "Compliance"
+  },
+  {
+    "question": "How do you handle data privacy and security?",
+    "answer": "We take privacy seriously. Information collected through our website is used solely for business purposes. We do not sell customer data. See our Privacy Policy for details. All systems can be configured to meet security requirements including FIPS 140-2, STIG compliance, and others.",
+    "category": "Compliance"
+  },
+  {
+    "question": "Can you work with my existing vendor partners?",
+    "answer": "Yes, we collaborate with other IT solution providers, resellers, and integrators. We maintain a vendor-agnostic approach and can work within your existing ecosystem.",
+    "category": "General"
+  },
+  {
+    "question": "Do you provide product demos or evaluations?",
+    "answer": "For qualified opportunities, we can arrange product demonstrations, proof-of-concept deployments, or evaluation units. Contact us to discuss your evaluation needs.",
+    "category": "General"
+  }
+]

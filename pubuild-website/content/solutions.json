@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ai-hpc",
+    "title": "AI & HPC Infrastructure",
+    "slug": "ai-hpc-infrastructure",
+    "description": "Purpose-built infrastructure for artificial intelligence, machine learning, and high-performance computing workloads. Optimized for training large language models, computer vision, and scientific simulation.",
+    "features": [
+      "GPU-accelerated compute clusters with NVIDIA A100/H100",
+      "High-bandwidth InfiniBand or RoCE networking",
+      "Parallel file systems for fast data access",
+      "Container orchestration with Kubernetes",
+      "MLOps pipeline integration",
+      "Liquid or advanced air cooling options"
+    ],
+    "benefits": [
+      "Reduce training time for large models by 10x or more",
+      "Scale from single nodes to hundreds of GPUs",
+      "Pre-configured software stacks (PyTorch, TensorFlow, CUDA)",
+      "Expert consultation on architecture and optimization",
+      "Support for hybrid cloud burst scenarios"
+    ],
+    "useCases": [
+      "Large language model training and fine-tuning",
+      "Computer vision and image recognition",
+      "Natural language processing",
+      "Computational fluid dynamics",
+      "Weather and climate modeling",
+      "Drug discovery and genomics"
+    ],
+    "relatedProducts": ["servers", "gpus", "storage", "networking"]
+  },
+  {
+    "id": "data-center",
+    "title": "Data Center Builds",
+    "slug": "data-center-builds",
+    "description": "Complete turnkey data center solutions from design to deployment. We provide rack-level integration, cabling, power distribution, and commissioning services.",
+    "features": [
+      "Rack-level assembly and testing before shipment",
+      "Cable labeling and management",
+      "Power and thermal planning",
+      "Network topology design and implementation",
+      "On-site installation and commissioning",
+      "Documentation and as-built diagrams"
+    ],
+    "benefits": [
+      "Faster deployment with pre-integrated racks",
+      "Reduced on-site labor and errors",
+      "Consistent, repeatable configurations",
+      "Single-source accountability",
+      "Vendor-agnostic approach"
+    ],
+    "useCases": [
+      "New data center construction",
+      "Data center modernization and refresh",
+      "Disaster recovery sites",
+      "Edge computing deployments",
+      "Government agency IT infrastructure",
+      "Colocation facility builds"
+    ],
+    "relatedProducts": ["servers", "storage", "networking", "rackmount"]
+  },
+  {
+    "id": "workstation-fleets",
+    "title": "Workstation Fleets",
+    "slug": "workstation-fleets",
+    "description": "Enterprise-wide workstation deployments for engineering, design, and content creation teams. Volume pricing and standardized configurations for easy management.",
+    "features": [
+      "Custom configurations for specific applications",
+      "ISV certification for professional software",
+      "Image deployment and asset tagging",
+      "Multi-site delivery coordination",
+      "Extended warranty and on-site support options",
+      "Lifecycle management and refresh programs"
+    ],
+    "benefits": [
+      "Standardized configurations reduce IT support burden",
+      "Volume pricing for cost savings",
+      "Predictable performance across teams",
+      "Simplified procurement for government buyers",
+      "Trade-in and recycling services available"
+    ],
+    "useCases": [
+      "Engineering and CAD teams",
+      "Media production and post-production facilities",
+      "Research laboratories",
+      "Financial trading desks",
+      "Architectural and design firms",
+      "Government agency modernization"
+    ],
+    "relatedProducts": ["workstations", "monitors", "gpus"]
+  }
+]

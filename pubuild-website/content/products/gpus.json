@@ -1,0 +1,71 @@
+{
+  "id": "gpus",
+  "name": "GPUs & Accelerators",
+  "slug": "gpus",
+  "description": "High-performance GPUs and compute accelerators for AI, machine learning, scientific computing, and professional visualization.",
+  "icon": "🎮",
+  "products": [
+    {
+      "id": "gpu-data-center",
+      "name": "Data Center GPU Accelerators",
+      "category": "gpus",
+      "description": "Enterprise GPUs designed for AI training, inference, and HPC workloads. Compatible with leading AI frameworks.",
+      "specs": [
+        "Compatible with NVIDIA A100, H100, L40S architectures",
+        "HBM2e/HBM3 memory (40GB-80GB)",
+        "NVLink and PCIe 5.0 support",
+        "Multi-Instance GPU (MIG) capable",
+        "ECC memory protection"
+      ],
+      "compatibility": [
+        "TensorFlow, PyTorch, JAX frameworks",
+        "CUDA 12.x, cuDNN, TensorRT",
+        "Kubernetes GPU operators",
+        "MLOps platforms"
+      ],
+      "features": [
+        "Passive or active cooling options",
+        "Remote management support",
+        "Secure boot",
+        "Virtualization ready (vGPU)"
+      ],
+      "applications": [
+        "Large language model training",
+        "Computer vision",
+        "Drug discovery",
+        "Climate modeling"
+      ]
+    },
+    {
+      "id": "gpu-professional",
+      "name": "Professional Visualization GPUs",
+      "category": "gpus",
+      "description": "Workstation GPUs for professional visualization, rendering, and design applications. ISV-certified.",
+      "specs": [
+        "Compatible with NVIDIA RTX A-series, AMD Radeon PRO",
+        "24GB-48GB GDDR6 memory",
+        "Ray tracing acceleration",
+        "AI-enhanced rendering",
+        "ECC memory optional"
+      ],
+      "compatibility": [
+        "ISV-certified drivers",
+        "OpenGL, DirectX, Vulkan",
+        "Adobe Creative Cloud",
+        "Autodesk, Dassault Systèmes applications"
+      ],
+      "features": [
+        "4x DisplayPort 1.4",
+        "HDR support",
+        "Sync connectivity",
+        "Low-profile options available"
+      ],
+      "applications": [
+        "3D rendering and animation",
+        "CAD and product design",
+        "Medical imaging",
+        "Broadcast and post-production"
+      ]
+    }
+  ]
+}

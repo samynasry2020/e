@@ -1,0 +1,69 @@
+{
+  "id": "servers",
+  "name": "Servers",
+  "slug": "servers",
+  "description": "Enterprise-grade servers designed for mission-critical workloads, data centers, and government applications. Built for reliability, scalability, and performance.",
+  "icon": "🖥️",
+  "products": [
+    {
+      "id": "server-1u-rack",
+      "name": "1U Rackmount Server",
+      "category": "servers",
+      "description": "Compact 1U server optimized for high-density deployments. Ideal for web hosting, databases, and virtualization.",
+      "specs": [
+        "Dual Intel Xeon Scalable processors (up to 40 cores)",
+        "Up to 2TB DDR4 ECC RAM",
+        "Hot-swappable drive bays (8x 2.5\" NVMe/SSD)",
+        "Redundant power supplies (80+ Platinum)",
+        "Integrated BMC for remote management"
+      ],
+      "compatibility": [
+        "Compatible with VMware ESXi, Microsoft Hyper-V, Proxmox",
+        "Linux (RHEL, Ubuntu Server, CentOS)",
+        "Windows Server 2019/2022"
+      ],
+      "features": [
+        "Tool-less chassis design",
+        "Advanced thermal management",
+        "IPMI 2.0 remote management",
+        "Hardware RAID support"
+      ],
+      "applications": [
+        "Virtualization clusters",
+        "Database servers",
+        "Web application hosting",
+        "Edge computing"
+      ]
+    },
+    {
+      "id": "server-2u-rack",
+      "name": "2U Rackmount Server",
+      "category": "servers",
+      "description": "Versatile 2U server with expanded storage and GPU support. Perfect for AI/ML workloads and storage-intensive applications.",
+      "specs": [
+        "Dual AMD EPYC processors (up to 128 cores)",
+        "Up to 4TB DDR4 ECC RAM",
+        "24x 2.5\" or 12x 3.5\" drive bays",
+        "Support for up to 4x double-width GPUs",
+        "Redundant hot-swap PSU (1600W)"
+      ],
+      "compatibility": [
+        "Compatible with NVIDIA A100, H100, RTX series GPUs",
+        "PCIe 4.0/5.0 support",
+        "NVMe over Fabric ready"
+      ],
+      "features": [
+        "GPU-optimized airflow",
+        "Out-of-band management",
+        "Secure boot and TPM 2.0",
+        "Cable management arms"
+      ],
+      "applications": [
+        "AI/ML training and inference",
+        "High-performance computing",
+        "Storage servers",
+        "Rendering farms"
+      ]
+    }
+  ]
+}

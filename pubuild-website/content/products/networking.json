@@ -1,0 +1,40 @@
+{
+  "id": "networking",
+  "name": "Networking Equipment",
+  "slug": "networking",
+  "description": "Enterprise networking infrastructure including switches, routers, and network security appliances. Built for high-availability data centers.",
+  "icon": "🌐",
+  "products": [
+    {
+      "id": "network-switch-10g",
+      "name": "10GbE Data Center Switch",
+      "category": "networking",
+      "description": "High-performance 10 Gigabit Ethernet switches for data center and enterprise networks. Layer 2/3 capabilities.",
+      "specs": [
+        "48x 10GbE SFP+ ports",
+        "6x 40GbE or 100GbE uplink ports",
+        "Non-blocking architecture",
+        "Hot-swappable power and fans",
+        "1.28 Tbps switching capacity"
+      ],
+      "compatibility": [
+        "IEEE 802.3 standards",
+        "VLAN, VxLAN, EVPN support",
+        "BGP, OSPF, IS-IS routing",
+        "SNMP, NetFlow, sFlow"
+      ],
+      "features": [
+        "Zero-touch provisioning",
+        "Hardware-based ACLs",
+        "Link aggregation (LACP)",
+        "Jumbo frames (9216 bytes)"
+      ],
+      "applications": [
+        "Data center fabric",
+        "Server aggregation",
+        "Storage network",
+        "High-performance computing"
+      ]
+    }
+  ]
+}
