@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" role="img" aria-labelledby="title desc">
+  <title id="title">PUBUILD logo</title>
+  <desc id="desc">Wordmark PUBUILD with geometric mark</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E7490" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="8" fill="url(#g)" />
+  <g fill="#0f172a" transform="translate(50,9)">
+    <path d="M0 22V0h8.8c4.9 0 8 2.9 8 7.2 0 4.4-3.3 7.1-8.2 7.1H5.5V22H0Zm5.5-12h3.1c2.2 0 3.6-1.1 3.6-2.8 0-1.9-1.4-3-3.7-3H5.5V10Z"/>
+    <path d="M21 11c0-6.2 4.5-11 10.7-11S42.5 4.8 42.5 11s-4.5 11-10.8 11S21 17.2 21 11Zm5.6 0c0 3.5 2.3 6.1 5.2 6.1 3 0 5.2-2.6 5.2-6.1s-2.3-6.1-5.2-6.1c-2.9 0-5.2 2.6-5.2 6.1Z"/>
+    <path d="M46 0h5.5v13.3c0 2.4 1.5 3.8 3.7 3.8s3.7-1.4 3.7-3.8V0H64v13.1C64 18 60.7 22 55.2 22s-8.9-4-8.9-8.9V0Z"/>
+    <path d="M67 22V0h5.5v8.1h8.1V0h5.5v22h-5.5v-8.3h-8.1V22H67Z"/>
+  </g>
+</svg>
