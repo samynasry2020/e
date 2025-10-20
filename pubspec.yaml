@@ -1,5 +1,5 @@
-name: companies_house_pro1
-description: companies_house_pro1
+name: hardware_compatibility_gpt
+description: Custom GPT for Hardware Part Compatibility Analysis
 version: 1.0.0
 
 environment:
@@ -9,15 +9,15 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.4
-
-  # Add your other dependencies here
+  provider: ^6.0.5
+  shared_preferences: ^2.0.18
+  flutter_markdown: ^0.6.18
+  url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# Define your app title and theme here
-title: companies_house_pro1
-theme:
-  primarySwatch: Colors.blue
+flutter:
+  uses-material-design: true
 
