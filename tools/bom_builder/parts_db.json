@@ -1,0 +1,193 @@
+[
+  {
+    "id": "cpu-intel-w9-3495x",
+    "category": "cpu",
+    "manufacturer": "Intel",
+    "model": "Xeon W9-3495X",
+    "mpn": null,
+    "specs": {
+      "family": "Xeon W",
+      "cores": 56,
+      "socket": "LGA4677",
+      "tdp_watts": 350
+    },
+    "compatibility_tags": ["intel", "xeon-w", "lga4677", "ddr5-ecc-rdimm"],
+    "notes": "56-core workstation CPU"
+  },
+  {
+    "id": "cpu-intel-w9-3595x",
+    "category": "cpu",
+    "manufacturer": "Intel",
+    "model": "Xeon W9-3595X",
+    "mpn": null,
+    "specs": {
+      "family": "Xeon W",
+      "cores": 60,
+      "socket": "LGA4677",
+      "tdp_watts": 350
+    },
+    "compatibility_tags": ["intel", "xeon-w", "lga4677", "ddr5-ecc-rdimm"],
+    "notes": "60-core workstation CPU"
+  },
+  {
+    "id": "mb-asus-w790e-sage-se",
+    "category": "motherboard",
+    "manufacturer": "ASUS",
+    "model": "Pro WS W790E-SAGE SE",
+    "mpn": null,
+    "specs": {
+      "socket": "LGA4677",
+      "chipset": "W790",
+      "form_factor": "EEB",
+      "pcie_slots": 8,
+      "max_gpus_double_slot": 4,
+      "memory_type": "DDR5 RDIMM ECC",
+      "memory_slots": 8,
+      "max_memory_gb": 2048,
+      "pcie_gen": "5.0",
+      "front_nvme_bays_supported": 4
+    },
+    "compatibility_tags": ["lga4677", "w790", "ddr5-ecc-rdimm", "eeb"],
+    "notes": "Workstation board for Xeon W; supports 4 dual-slot GPUs"
+  },
+  {
+    "id": "mb-supermicro-x13swa-tf",
+    "category": "motherboard",
+    "manufacturer": "Supermicro",
+    "model": "X13SWA-TF",
+    "mpn": "MBD-X13SWA-TF",
+    "specs": {
+      "socket": "LGA4677",
+      "chipset": "W790",
+      "form_factor": "E-ATX",
+      "pcie_slots": 7,
+      "max_gpus_double_slot": 3,
+      "memory_type": "DDR5 RDIMM ECC",
+      "memory_slots": 8,
+      "max_memory_gb": 2048,
+      "pcie_gen": "5.0",
+      "front_nvme_bays_supported": 0
+    },
+    "compatibility_tags": ["lga4677", "w790", "ddr5-ecc-rdimm", "eatx"],
+    "notes": "Alternative W790 board; fewer dual-slot GPU positions"
+  },
+  {
+    "id": "gpu-nvidia-rtx-6000-ada-pny",
+    "category": "gpu",
+    "manufacturer": "PNY",
+    "model": "NVIDIA RTX 6000 Ada Generation 48GB",
+    "mpn": "VCQRTX6000ADA-PB",
+    "specs": {
+      "gpu_chip": "AD102",
+      "vram_gb": 48,
+      "slot_width": "dual",
+      "length_mm": 267,
+      "tdp_watts": 300,
+      "pcie_gen": "4.0/5.0",
+      "power_connectors": "1x 16-pin 12VHPWR"
+    },
+    "compatibility_tags": ["rtx6000ada", "dual-slot", "workstation"],
+    "notes": "Professional Ada GPU"
+  },
+  {
+    "id": "ram-256gb-ddr5-5600-ecc-rdimm",
+    "category": "memory",
+    "manufacturer": "Samsung",
+    "model": "256GB DDR5-5600 ECC RDIMM",
+    "mpn": null,
+    "specs": {
+      "type": "DDR5 RDIMM ECC",
+      "capacity_gb": 256,
+      "speed_mtps": 5600,
+      "rank": "2R"
+    },
+    "compatibility_tags": ["ddr5-ecc-rdimm"],
+    "notes": "High-capacity ECC RDIMM"
+  },
+  {
+    "id": "nvme-micron-9400-pro-30.72tb-u2",
+    "category": "storage",
+    "manufacturer": "Micron",
+    "model": "9400 Pro 30.72TB U.2 NVMe",
+    "mpn": null,
+    "specs": {
+      "form_factor": "U.2 2.5in",
+      "interface": "PCIe 4.0 x4 NVMe",
+      "capacity_tb": 30.72
+    },
+    "compatibility_tags": ["u.2", "nvme"],
+    "notes": "Enterprise NVMe SSD"
+  },
+  {
+    "id": "cage-icy-dock-mb699vp-b",
+    "category": "nvme_cage",
+    "manufacturer": "ICY DOCK",
+    "model": "ToughArmor MB699VP-B",
+    "mpn": "MB699VP-B",
+    "specs": {
+      "bays": 4,
+      "form_factor": "5.25in",
+      "drive_support": "4x U.2/U.3 NVMe"
+    },
+    "compatibility_tags": ["4-bay", "u.2", "front-accessible"],
+    "notes": "Front-accessible 4-bay U.2/U.3 NVMe cage"
+  },
+  {
+    "id": "psu-generic-2400w",
+    "category": "psu",
+    "manufacturer": "Generic",
+    "model": "2400W Server PSU (80+ Platinum)",
+    "mpn": null,
+    "specs": {
+      "wattage": 2400,
+      "form_factor": "server",
+      "efficiency": "80+ Platinum"
+    },
+    "compatibility_tags": ["server", "redundant"],
+    "notes": "High-wattage PSU for multi-GPU"
+  },
+  {
+    "id": "psu-supermicro-2kw",
+    "category": "psu",
+    "manufacturer": "Supermicro",
+    "model": "2000W Redundant PSU (80+ Platinum)",
+    "mpn": null,
+    "specs": {
+      "wattage": 2000,
+      "form_factor": "server redundant",
+      "efficiency": "80+ Platinum"
+    },
+    "compatibility_tags": ["server", "redundant"],
+    "notes": "Server-grade redundant PSU"
+  },
+  {
+    "id": "chassis-supermicro-cse-747",
+    "category": "chassis",
+    "manufacturer": "Supermicro",
+    "model": "SuperWorkstation 747 (CSE-747 family)",
+    "mpn": null,
+    "specs": {
+      "form_factor": "Tower/4U",
+      "front_bays_5_25": 4,
+      "front_nvme_bays": 4,
+      "gpu_support": "up to 4 dual-slot",
+      "board_support": ["EEB", "E-ATX"]
+    },
+    "compatibility_tags": ["tower", "eeb", "front-bays-5.25"],
+    "notes": "Tower/4U chassis with multiple bays"
+  },
+  {
+    "id": "cooler-noctua-nh-u14s-dx-4677",
+    "category": "cooler",
+    "manufacturer": "Noctua",
+    "model": "NH-U14S DX-4677",
+    "mpn": "NH-U14S DX-4677",
+    "specs": {
+      "socket": "LGA4677",
+      "type": "air",
+      "tdp_support_watts": 350
+    },
+    "compatibility_tags": ["lga4677", "air-cooler"],
+    "notes": "Dedicated LGA4677 cooler for Xeon W"
+  }
+]
