@@ -1,0 +1,97 @@
+{
+  "compatibility_rules": {
+    "cpu_motherboard": {
+      "rule": "CPU socket must match motherboard socket",
+      "validation": "cpu.socket === motherboard.socket"
+    },
+    "memory_motherboard": {
+      "rule": "Memory type must match motherboard support",
+      "validation": "memory.type === motherboard.memory_type"
+    },
+    "memory_capacity": {
+      "rule": "Total memory cannot exceed motherboard maximum",
+      "validation": "total_memory <= motherboard.max_memory"
+    },
+    "gpu_pcie_slots": {
+      "rule": "Number of GPUs cannot exceed available PCIe x16 slots",
+      "validation": "gpu_count <= motherboard.pcie_x16_slots"
+    },
+    "power_requirements": {
+      "rule": "PSU wattage must exceed total system power draw by 20%",
+      "calculation": {
+        "base": "cpu.tdp + (gpu.tdp * gpu_count) + 150",
+        "safety_margin": 1.2
+      }
+    },
+    "cooling_requirements": {
+      "rule": "Cooling solution must handle CPU TDP",
+      "validation": "cooler.tdp_rating >= cpu.tdp"
+    },
+    "case_motherboard": {
+      "rule": "Case must support motherboard form factor",
+      "validation": "motherboard.form_factor in case.motherboard_support"
+    },
+    "gpu_case_clearance": {
+      "rule": "GPU length must fit within case",
+      "validation": "gpu.length <= case.max_gpu_length"
+    },
+    "cooler_case_clearance": {
+      "rule": "CPU cooler height must fit within case",
+      "validation": "cooler.height <= case.max_cpu_cooler_height"
+    },
+    "pcie_bandwidth": {
+      "rule": "Total PCIe lanes used cannot exceed CPU provision",
+      "validation": "total_pcie_lanes_used <= cpu.pcie_lanes"
+    }
+  },
+  "required_components": {
+    "essential": [
+      "CPU",
+      "Motherboard",
+      "Memory (RAM)",
+      "Storage (Boot Drive)",
+      "Power Supply",
+      "Case",
+      "CPU Cooling"
+    ],
+    "optional": [
+      "GPU (unless for compute/graphics workloads)",
+      "Additional Storage",
+      "Network Card (if not integrated)",
+      "Sound Card (if not integrated)",
+      "Optical Drive",
+      "Case Fans (additional)"
+    ]
+  },
+  "validation_warnings": {
+    "high_power_draw": {
+      "condition": "total_power > 1500W",
+      "message": "System requires high wattage PSU and may need dedicated circuit"
+    },
+    "extreme_cooling": {
+      "condition": "cpu.tdp > 350W",
+      "message": "CPU requires high-end cooling solution, consider custom loop"
+    },
+    "memory_channels": {
+      "condition": "memory_modules % cpu.memory_channels != 0",
+      "message": "Memory configuration not optimal for available channels"
+    },
+    "gpu_spacing": {
+      "condition": "gpu_count > 2 && !liquid_cooled",
+      "message": "Multiple GPUs may have thermal issues without proper spacing or liquid cooling"
+    }
+  },
+  "performance_recommendations": {
+    "memory_configuration": {
+      "xeon_w": "Use all memory channels for optimal performance (8 channels = 8 modules minimum)"
+    },
+    "storage_configuration": {
+      "boot_drive": "NVMe PCIe 4.0 or newer recommended",
+      "work_drives": "Consider RAID configuration for redundancy"
+    },
+    "gpu_configuration": {
+      "multi_gpu": "Ensure NVLink/SLI bridge if applicable",
+      "compute": "Match VRAM to dataset size requirements"
+    }
+  }
+}

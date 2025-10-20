@@ -1,0 +1,428 @@
+{
+  "processors": {
+    "intel_xeon_w": {
+      "W9-3595X": {
+        "cores": 60,
+        "threads": 120,
+        "base_clock": "2.0 GHz",
+        "boost_clock": "4.8 GHz",
+        "tdp": 420,
+        "socket": "LGA-4677",
+        "memory_channels": 8,
+        "max_memory": "4TB",
+        "pcie_lanes": 112
+      },
+      "W9-3495X": {
+        "cores": 56,
+        "threads": 112,
+        "base_clock": "1.9 GHz",
+        "boost_clock": "4.8 GHz",
+        "tdp": 420,
+        "socket": "LGA-4677",
+        "memory_channels": 8,
+        "max_memory": "4TB",
+        "pcie_lanes": 112
+      },
+      "W7-3465X": {
+        "cores": 28,
+        "threads": 56,
+        "base_clock": "2.5 GHz",
+        "boost_clock": "4.8 GHz",
+        "tdp": 300,
+        "socket": "LGA-4677",
+        "memory_channels": 8,
+        "max_memory": "4TB",
+        "pcie_lanes": 112
+      },
+      "W5-3435X": {
+        "cores": 16,
+        "threads": 32,
+        "base_clock": "3.1 GHz",
+        "boost_clock": "4.7 GHz",
+        "tdp": 270,
+        "socket": "LGA-4677",
+        "memory_channels": 8,
+        "max_memory": "4TB",
+        "pcie_lanes": 112
+      }
+    }
+  },
+  "gpus": {
+    "nvidia_rtx": {
+      "RTX 6000 Ada": {
+        "part_number": "L40S",
+        "vram": "48GB GDDR6",
+        "cuda_cores": 18176,
+        "tensor_cores": 568,
+        "rt_cores": 142,
+        "tdp": 300,
+        "ai_tops": 1457,
+        "interface": "PCIe 4.0 x16",
+        "form_factor": "Full Height, Dual Slot",
+        "power_connector": "1x 16-pin"
+      },
+      "RTX 5000 Ada": {
+        "part_number": "RTX5000ADA",
+        "vram": "32GB GDDR6",
+        "cuda_cores": 12800,
+        "tensor_cores": 400,
+        "rt_cores": 100,
+        "tdp": 250,
+        "ai_tops": 950,
+        "interface": "PCIe 4.0 x16",
+        "form_factor": "Full Height, Dual Slot",
+        "power_connector": "1x 16-pin"
+      },
+      "RTX 4000 Ada": {
+        "part_number": "RTX4000ADA",
+        "vram": "20GB GDDR6",
+        "cuda_cores": 6144,
+        "tensor_cores": 192,
+        "rt_cores": 48,
+        "tdp": 130,
+        "ai_tops": 450,
+        "interface": "PCIe 4.0 x16",
+        "form_factor": "Full Height, Single Slot",
+        "power_connector": "None (slot powered)"
+      },
+      "RTX A6000": {
+        "part_number": "RTXA6000",
+        "vram": "48GB GDDR6",
+        "cuda_cores": 10752,
+        "tensor_cores": 336,
+        "rt_cores": 84,
+        "tdp": 300,
+        "ai_tops": 850,
+        "interface": "PCIe 4.0 x16",
+        "form_factor": "Full Height, Dual Slot",
+        "power_connector": "1x 8-pin"
+      }
+    }
+  },
+  "motherboards": {
+    "workstation": {
+      "ASUS Pro WS W790-ACE": {
+        "socket": "LGA-4677",
+        "chipset": "Intel W790",
+        "memory_slots": 8,
+        "memory_type": "DDR5 RDIMM",
+        "max_memory": "2TB",
+        "pcie_slots": {
+          "x16": 7,
+          "x8": 0,
+          "x4": 0,
+          "x1": 0
+        },
+        "m2_slots": 4,
+        "sata_ports": 10,
+        "form_factor": "CEB",
+        "power_phases": "36+3",
+        "networking": ["Dual 10GbE", "WiFi 6E"],
+        "usb_ports": {
+          "usb_32_gen2x2": 2,
+          "usb_32_gen2": 8,
+          "usb_32_gen1": 4
+        }
+      },
+      "Supermicro X13SWA-TF": {
+        "socket": "LGA-4677",
+        "chipset": "Intel W790",
+        "memory_slots": 8,
+        "memory_type": "DDR5 RDIMM",
+        "max_memory": "2TB",
+        "pcie_slots": {
+          "x16": 5,
+          "x8": 2,
+          "x4": 1,
+          "x1": 0
+        },
+        "m2_slots": 3,
+        "sata_ports": 10,
+        "form_factor": "E-ATX",
+        "power_phases": "24+2",
+        "networking": ["Dual 10GbE"],
+        "usb_ports": {
+          "usb_32_gen2": 6,
+          "usb_32_gen1": 6,
+          "usb_20": 2
+        }
+      },
+      "HP Z8 Fury G5": {
+        "socket": "LGA-4677",
+        "chipset": "Intel W790",
+        "memory_slots": 8,
+        "memory_type": "DDR5 RDIMM",
+        "max_memory": "2TB",
+        "pcie_slots": {
+          "x16": 8,
+          "x8": 0,
+          "x4": 0,
+          "x1": 0
+        },
+        "m2_slots": 4,
+        "sata_ports": 8,
+        "form_factor": "Proprietary",
+        "power_phases": "Digital VRM",
+        "networking": ["10GbE", "1GbE", "WiFi 6E"],
+        "usb_ports": {
+          "usb_32_gen2x2": 2,
+          "usb_32_gen2": 10,
+          "usb_32_gen1": 4
+        }
+      }
+    }
+  },
+  "memory": {
+    "ddr5_rdimm": {
+      "Kingston KSM48R40BD4TMM-64HAM": {
+        "capacity": "64GB",
+        "speed": "4800MHz",
+        "type": "DDR5 RDIMM",
+        "ecc": true,
+        "voltage": "1.1V",
+        "latency": "CL40",
+        "ranks": "Dual Rank"
+      },
+      "Crucial MTC40F2046S1RC48BA1": {
+        "capacity": "64GB",
+        "speed": "4800MHz",
+        "type": "DDR5 RDIMM",
+        "ecc": true,
+        "voltage": "1.1V",
+        "latency": "CL40",
+        "ranks": "Dual Rank"
+      },
+      "Samsung M321R8GA0BB0-CQKZJ": {
+        "capacity": "64GB",
+        "speed": "4800MHz",
+        "type": "DDR5 RDIMM",
+        "ecc": true,
+        "voltage": "1.1V",
+        "latency": "CL40",
+        "ranks": "Dual Rank"
+      },
+      "Micron MTC20F1045S1RC48BA1": {
+        "capacity": "32GB",
+        "speed": "4800MHz",
+        "type": "DDR5 RDIMM",
+        "ecc": true,
+        "voltage": "1.1V",
+        "latency": "CL40",
+        "ranks": "Single Rank"
+      }
+    }
+  },
+  "storage": {
+    "nvme": {
+      "Samsung 990 PRO": {
+        "capacities": ["1TB", "2TB", "4TB"],
+        "interface": "PCIe 4.0 x4",
+        "form_factor": "M.2 2280",
+        "sequential_read": "7450 MB/s",
+        "sequential_write": "6900 MB/s",
+        "endurance": {
+          "1TB": "600 TBW",
+          "2TB": "1200 TBW",
+          "4TB": "2400 TBW"
+        },
+        "warranty": "5 years"
+      },
+      "WD Black SN850X": {
+        "capacities": ["1TB", "2TB", "4TB"],
+        "interface": "PCIe 4.0 x4",
+        "form_factor": "M.2 2280",
+        "sequential_read": "7300 MB/s",
+        "sequential_write": "6600 MB/s",
+        "endurance": {
+          "1TB": "600 TBW",
+          "2TB": "1200 TBW",
+          "4TB": "2400 TBW"
+        },
+        "warranty": "5 years"
+      },
+      "Crucial T700": {
+        "capacities": ["1TB", "2TB", "4TB"],
+        "interface": "PCIe 5.0 x4",
+        "form_factor": "M.2 2280",
+        "sequential_read": "12400 MB/s",
+        "sequential_write": "11800 MB/s",
+        "endurance": {
+          "1TB": "600 TBW",
+          "2TB": "1200 TBW",
+          "4TB": "2400 TBW"
+        },
+        "warranty": "5 years"
+      },
+      "Samsung PM1743": {
+        "capacities": ["1.92TB", "3.84TB", "7.68TB", "15.36TB", "30.72TB"],
+        "interface": "PCIe 5.0 x4",
+        "form_factor": "2.5\" U.3",
+        "sequential_read": "14000 MB/s",
+        "sequential_write": "10000 MB/s",
+        "endurance": {
+          "1.92TB": "3504 TBW",
+          "3.84TB": "7008 TBW",
+          "7.68TB": "14016 TBW"
+        },
+        "warranty": "5 years",
+        "type": "Enterprise"
+      }
+    }
+  },
+  "power_supplies": {
+    "workstation": {
+      "Corsair AX1600i": {
+        "wattage": 1600,
+        "efficiency": "80+ Titanium",
+        "form_factor": "ATX",
+        "modular": "Fully Modular",
+        "rails": "Single +12V",
+        "connectors": {
+          "24pin_atx": 1,
+          "8pin_eps": 2,
+          "pcie_8pin": 10,
+          "sata": 16,
+          "molex": 8
+        },
+        "warranty": "10 years"
+      },
+      "EVGA SuperNOVA T2 1600": {
+        "wattage": 1600,
+        "efficiency": "80+ Titanium",
+        "form_factor": "ATX",
+        "modular": "Fully Modular",
+        "rails": "Single +12V",
+        "connectors": {
+          "24pin_atx": 1,
+          "8pin_eps": 2,
+          "pcie_8pin": 9,
+          "sata": 14,
+          "molex": 6
+        },
+        "warranty": "10 years"
+      },
+      "HP 2250W PSU": {
+        "wattage": 2250,
+        "efficiency": "90% Titanium",
+        "form_factor": "Proprietary",
+        "modular": "Non-Modular",
+        "rails": "Multi +12V",
+        "connectors": {
+          "proprietary": true
+        },
+        "warranty": "3 years",
+        "part_number": "P40516-001"
+      },
+      "Seasonic PRIME TX-1600": {
+        "wattage": 1600,
+        "efficiency": "80+ Titanium",
+        "form_factor": "ATX",
+        "modular": "Fully Modular",
+        "rails": "Single +12V",
+        "connectors": {
+          "24pin_atx": 1,
+          "8pin_eps": 2,
+          "pcie_8pin": 10,
+          "sata": 14,
+          "molex": 5
+        },
+        "warranty": "12 years"
+      }
+    }
+  },
+  "cooling": {
+    "air": {
+      "Noctua NH-U14S DX-4677": {
+        "socket_compatibility": ["LGA-4677"],
+        "tdp_rating": 420,
+        "height": "165mm",
+        "fans": "1x 140mm",
+        "noise_level": "24.6 dB(A)",
+        "type": "Tower"
+      },
+      "Arctic Freezer 4U-SP5": {
+        "socket_compatibility": ["LGA-4677"],
+        "tdp_rating": 400,
+        "height": "132mm",
+        "fans": "2x 120mm",
+        "noise_level": "28 dB(A)",
+        "type": "4U Server"
+      }
+    },
+    "liquid": {
+      "Arctic Liquid Freezer II 420": {
+        "socket_compatibility": ["LGA-4677", "with kit"],
+        "tdp_rating": 450,
+        "radiator_size": "420mm",
+        "fans": "3x 140mm",
+        "pump_speed": "800-2000 RPM",
+        "noise_level": "22.5 dB(A)"
+      },
+      "Corsair iCUE H170i ELITE": {
+        "socket_compatibility": ["LGA-4677", "with kit"],
+        "tdp_rating": 450,
+        "radiator_size": "420mm",
+        "fans": "3x 140mm RGB",
+        "pump_speed": "2100 RPM",
+        "noise_level": "37 dB(A)"
+      }
+    }
+  },
+  "cases": {
+    "workstation": {
+      "HP Z8 Fury G5 Chassis": {
+        "form_factor": "Tower",
+        "motherboard_support": ["Proprietary"],
+        "max_gpu_length": "338mm",
+        "max_cpu_cooler_height": "200mm",
+        "drive_bays": {
+          "3.5": 6,
+          "2.5": 8,
+          "nvme": 4
+        },
+        "expansion_slots": 8,
+        "psu_support": "Proprietary 2250W",
+        "dimensions": "552 x 210 x 551mm",
+        "weight": "28kg",
+        "cooling": {
+          "front_fans": "3x 120mm",
+          "rear_fans": "2x 92mm",
+          "top_fans": "Optional"
+        }
+      },
+      "Thermaltake Core W200": {
+        "form_factor": "Super Tower",
+        "motherboard_support": ["XL-ATX", "E-ATX", "ATX"],
+        "max_gpu_length": "600mm",
+        "max_cpu_cooler_height": "230mm",
+        "drive_bays": {
+          "3.5": 18,
+          "2.5": 19
+        },
+        "expansion_slots": 10,
+        "psu_support": "Dual PSU",
+        "dimensions": "810 x 475 x 618mm",
+        "weight": "49.5kg"
+      },
+      "Corsair 7000D Airflow": {
+        "form_factor": "Full Tower",
+        "motherboard_support": ["E-ATX", "ATX"],
+        "max_gpu_length": "450mm",
+        "max_cpu_cooler_height": "190mm",
+        "drive_bays": {
+          "3.5": 4,
+          "2.5": 6
+        },
+        "expansion_slots": 8,
+        "psu_support": "ATX",
+        "dimensions": "600 x 248 x 550mm",
+        "weight": "18.6kg",
+        "cooling": {
+          "front_fans": "3x 140mm",
+          "rear_fans": "1x 140mm",
+          "top_fans": "3x 140mm optional"
+        }
+      }
+    }
+  }
+}
